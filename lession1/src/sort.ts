@@ -5,7 +5,6 @@
 const arr1 = [1, 2, 3, 10, 14 ,4, 5];
 
 // sử dụng selection sort 
-// thử test code , còn lỗi chưa bug được 
 
 function selectionSort<T>(arr: T[]): T[] {
     for (let i = 0; i < arr.length - 1; i++) {

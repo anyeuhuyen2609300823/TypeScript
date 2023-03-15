@@ -11,7 +11,6 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 // khai báo mảng
 var arr1 = [1, 2, 3, 10, 14, 4, 5];
 // sử dụng selection sort 
-// thử test code , còn lỗi chưa bug được 
 function selectionSort(arr) {
     var _a;
     for (var i = 0; i < arr.length - 1; i++) {
