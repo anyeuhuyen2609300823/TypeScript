@@ -29,6 +29,8 @@ const result_2 = selectionSort(arr1);
 console.log(result_2);
 
 
+/// 
+
 
 // sử dụng vòng lặp lồng để sắp xếp theo thứ tự tăng dần
 
