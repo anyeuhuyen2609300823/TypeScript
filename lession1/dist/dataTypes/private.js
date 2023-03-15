@@ -1,0 +1,1 @@
+var strs = " hello world ";
