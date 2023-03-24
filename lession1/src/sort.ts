@@ -6,29 +6,29 @@ const arr1 = [1, 2, 3, 10, 14, 4, 5];
 
 // sử dụng selection sort 
 
-function selectionSort<T>(arr: T[]): T[] {
-  for (let i = 0; i < arr.length - 1; i++) {
-    let minIndex = i;
+// function selectionSort<T>(arr: T[]): T[] {
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     let minIndex = i;
 
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[minIndex]) {
-        minIndex = j;
-      }
-    }
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[j] < arr[minIndex]) {
+//         minIndex = j;
+//       }
+//     }
 
-    if (minIndex !== i) {
-      [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
-    }
-  }
+//     if (minIndex !== i) {
+//       [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+//     }
+//   }
 
-  return arr;
-}
+//   return arr;
+// }
 
-const result_2 = selectionSort(arr1);
+// const result_2 = selectionSort(arr1);
 
-console.log(result_2);
+// console.log(result_2);
 
-
+//
 /// 
 
 
