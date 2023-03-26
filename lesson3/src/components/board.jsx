@@ -96,7 +96,7 @@ const Board = ({ children }) => {
   return (
     <>
       <h2>Winner is: {checkWinner()}</h2>
-      <button onClick={quayLai} className="">
+      <button onClick={quayLai} className="btn__prev">
         quay lại
       </button>
       <div className="grid grid-cols-3 gap-3 game-board">

@@ -27,21 +27,11 @@
     font-size: 40px;
   }
 
-  .square:hover {
-    cursor: pointer;
-    background-color: #f9f9f9;
+  .btn__prev{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: orangered;
+    border: none;
   }
-  .square:active{
-    width: 100px;
-    height: 100px;
-  }
-  .highlight {
-    background-color: #ffa500;
-    color: #fff;
-  
-  }
-  .board .square.winner {
-    background-color: yellow;
-  }
-  
     
