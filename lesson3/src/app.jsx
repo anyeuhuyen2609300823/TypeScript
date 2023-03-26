@@ -1,8 +1,8 @@
-// import { useState } from "react";
+import { useState } from "react";
 import Avatar from "./components/avatar";
 import Square from "./components/square";
 import Board from "./components/board";
-import style from "./style.css";
+import "./style.css";
 
 // Props: Là một đối tượng, truyền dữ liệu từ component cha xuống component con
 // Imutable
@@ -10,18 +10,8 @@ import style from "./style.css";
 
 const App = () => {
   return (
-    <div className="h-[100vh] flex justify-center items-center">
-      <Board>
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-      </Board>
+    <div className="h-[100vh] flex justify-center items-center app">
+      <Board></Board>
     </div>
   );
 };
