@@ -31,7 +31,14 @@
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background: orangered;
+    background: greenyellow;
     border: none;
   }
     
+  .btn__reset {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: aqua;
+    border: none;
+  }

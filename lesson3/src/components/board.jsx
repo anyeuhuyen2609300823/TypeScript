@@ -49,6 +49,14 @@ const Board = ({ children }) => {
     setPlayer(play);
   };
 
+  // reset lại trang
+  const [reset, setReset] = useState(false);
+
+  const handleReset = () => {
+    setReset(!reset);
+    window.location.reload(); // reload trang để reset lại
+  };
+
   const winList = [
     [0, 1, 2],
     [3, 4, 5],
@@ -96,6 +104,13 @@ const Board = ({ children }) => {
   return (
     <>
       <h2>Winner is: {checkWinner()}</h2>
+
+      {/* nút button reset trang  */}
+      <button onClick={handleReset} className="btn__reset">
+        Reset trang
+      </button>
+
+      {/* nút button quay lại một lần */}
       <button onClick={quayLai} className="btn__prev">
         quay lại
       </button>
