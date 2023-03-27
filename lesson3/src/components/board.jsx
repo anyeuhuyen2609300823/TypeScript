@@ -32,7 +32,34 @@ const Board = ({ children }) => {
     setGame(newGame);
     play = player;
     setPlayer(!player);
+
+    // autoPlay();
   };
+
+  // hàm tự động đánh nước
+  // const autoPlay = () => {
+  //   setTimeout(() => {
+  //     // nếu đã có người thắng hoặc bàn cờ đầy thì thoát
+  //     if (checkWinner() || !game.includes(null)) {
+  //       return;
+  //     }
+
+  //     // tìm vị trí của những ô trống
+  //     const emptySquares = [];
+  //     for (let i = 0; i < game.length; i++) {
+  //       if (game[i] === null) {
+  //         emptySquares.push(i);
+  //       }
+  //     }
+
+  //     // chọn một ô ngẫu nhiên trong số các ô trống
+  //     const randomIndex = Math.floor(Math.random() * emptySquares.length);
+  //     const position = emptySquares[randomIndex];
+
+  //     // đánh nước vào ô được chọn
+  //     handlePlay(position);
+  //   }, 3000);
+  // };
 
   // quay lại
   const quayLai = () => {
