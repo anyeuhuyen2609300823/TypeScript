@@ -100,6 +100,9 @@ const Board = ({ children }) => {
     for (let i = 0; i < winList.length; i++) {
       const [p1, p2, p3] = winList[i];
       if (
+        game[p1] &&
+        game[p2] &&
+        game[p3] &&
         game[p1] === game[p2] &&
         game[p2] === game[p3] &&
         game[p3] === game[p1]
@@ -115,6 +118,9 @@ const Board = ({ children }) => {
     for (let i = 0; i < winList.length; i++) {
       const [p1, p2, p3] = winList[i];
       if (
+        game[p1] &&
+        game[p2] &&
+        game[p3] &&
         game[p1] === game[p2] &&
         game[p2] === game[p3] &&
         game[p3] === game[p1] &&
