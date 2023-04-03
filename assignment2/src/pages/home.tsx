@@ -7,7 +7,7 @@ import { IProduct } from "../models"
 const Home = () => {
     const [products,setProducts] = useState<IProduct[]>([])
 
-    const   fetchProducts = async () => {
+    const fetchProducts = async () => {
         const {data} = await getAll()
         setProducts(data)
     }
