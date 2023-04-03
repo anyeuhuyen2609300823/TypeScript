@@ -6,7 +6,7 @@ type Props = {
 }
 
 const Product = ({data}: Props) => {
-    return <Link to={`products/${data.id}`} className="block">
+    return <Link to={`product/${data.id}`} className="block">
         <img
             alt="Art"
             src={data.images?.[0].base_url}
