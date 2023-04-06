@@ -1,15 +1,17 @@
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 
 import UserFooter from "./userFooter"
 import UserHeader from "./userHeader"
 import Slider from './slider'
+import Menu from './menu'
 
 const UserLayout = () => {
     return <>
-        <UserHeader/>
-        <Slider/>
-        <Outlet/>
-        <UserFooter/>
+        <UserHeader />
+        {/* <Menu /> */}
+        <Slider />
+        <Outlet />
+        <UserFooter />
     </>
 }
 

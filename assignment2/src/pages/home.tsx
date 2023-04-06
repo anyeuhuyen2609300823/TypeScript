@@ -16,7 +16,7 @@ const Home = () => {
     }, [])
     return <div>
         <h1>Sản phẩm nổi bật</h1>
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-6 gap-3">
             {products.map(product =>
                 <Product
                     data={product}
