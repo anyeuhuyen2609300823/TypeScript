@@ -21,7 +21,7 @@ function App() {
       </Route>
       <Route path='/admin' element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
-        <Route path='product/:id' element={<ProductUpdate />} />
+        <Route path='/admin/product/:id' element={<ProductUpdate />} />
       </Route>
     </Routes>
   </BrowserRouter>
