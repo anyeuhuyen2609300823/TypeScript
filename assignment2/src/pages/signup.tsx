@@ -1,4 +1,3 @@
-
 // 1. Xây dựng giao diện form
 // 2. Cần import thư viện quản lý form
 // 3. Khai bao cac truong du lieu trong form va validate form
@@ -163,7 +162,7 @@ const Signup = () => {
 
                             <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                                 Already have an account?
-                                <a href="#" className="text-gray-700 underline">Log in</a>.
+                                <a href="/signin" className="text-gray-700 underline">Log in</a>.
                             </p>
                         </div>
                     </form>

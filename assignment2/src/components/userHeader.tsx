@@ -1,4 +1,8 @@
+import { useLocalStorage } from "../hook"
 const UserHeader = () => {
+
+    const [user, setUser] = useLocalStorage('user', null)
+
     return <header className="bg-red-500 h-[70px]">
         <div className="container m-auto flex gap-4 items-center">
             <img className="w-[80px] h-[70px]" src="/logo.png" alt="" />
@@ -8,6 +12,9 @@ const UserHeader = () => {
                 </button>
                 <input className="grow h-[40px] p-[10px]" type="text" placeholder="Search" />
             </div>
+
+            <button className="btn__primary w-[50px] h-10 bg-slate-200 text-xs rounded-md"><a href="/signup">Sign up</a></button>
+            <p className="text-white text-xs">Xin chào: {user && user.lastName}</p>
 
             {/* <nav className="flex sm:justify-center space-x-4">
                 {[

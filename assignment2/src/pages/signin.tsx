@@ -117,6 +117,11 @@ const Signin = () => {
                             >
                                 Đăng nhập
                             </button>
+
+                            <p className="mt-4 text-sm text-gray-500 sm:mt-0">
+                                Already have an account?
+                                <a href="/signup" className="text-gray-700 underline">Sign up</a>.
+                            </p>
                         </div>
                     </form>
                 </div>

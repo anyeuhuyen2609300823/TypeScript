@@ -56,9 +56,13 @@ const ProductDetail = () => {
                 <span className="r">Thêm vào <br /> giỏ hàng</span>
             </div>
         </div>
-        <div>
+        <div className="container items-center mx-auto ">
             <h1 className="text-center m-10 text-danger fs-1">ĐẶC ĐIỂM NỔI BẬT</h1>
-
+        </div>
+        <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8" dangerouslySetInnerHTML={{ __html: product.description }}></div>
+            <div className="col-2"></div>
         </div>
     </div>
 }

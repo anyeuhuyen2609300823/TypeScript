@@ -20,10 +20,10 @@ const Product = ({ data }: Props) => {
             </h3>
             <div className="flex absolute bottom-6">
                 <h3 className="mt-4 text-xs font-semibold text-red-500 sm:text-xs mr-2">
-                    {data.price}
+                    {data.price}đ
                 </h3>
                 <p className="mt-4 text-xs font-semibold text-gray-800 sm:text-xs ml-2">
-                    {data.original_price}
+                    {data.original_price}đ
                 </p>
             </div>
             <div className="flex absolute bottom-2">
