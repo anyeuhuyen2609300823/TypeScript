@@ -1,6 +1,6 @@
 const UserFooter = () => {
     return <div>
-        <div className="grid grid-cols-4 gap-3 mt-20 pl-20">
+        <div className="grid grid-cols-4 gap-3 mt-20 pl-20 container">
             <div className="information">
                 <h2>Tìm cửa hàng</h2>
                 <span>Tìm cửa hàng gần nhất</span>
@@ -50,7 +50,7 @@ const UserFooter = () => {
                 <span>Tuyển dụng</span>
             </div>
         </div>
-        <div className="foodter grid grid-cols-3 gap-3 mt-20 pl-20">
+        <div className="foodter grid grid-cols-3 mt-20 mx-10 container">
             <div className="intro-ios">
                 <span>Điện thoại iPhone 13 -</span> <span>Điện thoại iPhone 12</span> <span>Điện thoại iPhone 11</span> <br />
                 <span>Điện thoại iPhone 13 Pro Max-</span> <span>Điện thoại iPhone 11 Pro Max</span><br />
@@ -68,7 +68,7 @@ const UserFooter = () => {
             </div>
 
         </div>
-        <div className="intro-foodter mt-3 ml-20">
+        <div className="intro-foodter mt-3 mx-10 container">
             <p>Công ty TNHH Thương mại và dịch vụ kỹ thuật DIỆU PHÚC - GPĐKKD: 0316172372 do sở KH & ĐT TP. HCM cấp ngày 02/03/2020. Địa chỉ: 350-352 Võ Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam. Điện thoại: 028.7108.9666.</p>
         </div>
     </div>
