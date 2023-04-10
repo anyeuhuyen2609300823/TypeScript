@@ -8,6 +8,7 @@ import Signin from './pages/signin'
 import AdminLayout from './components/layout/admin'
 import Dashboard from './pages/dashboard'
 import ProductUpdate from './pages/product-update'
+import CreatProducts from './pages/create';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path='/admin' element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
         <Route path='/admin/product/:id' element={<ProductUpdate />} />
+        <Route path='/admin/products' element={<CreatProducts />} />
       </Route>
     </Routes>
   </BrowserRouter>

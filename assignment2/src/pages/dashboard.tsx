@@ -31,7 +31,7 @@ const Dashboard = () => {
     return <div className="mt-20">
         <h2>Product list</h2>
         <button className="bg-green-600 text-white rounded-md p-2 ml-1">
-            <Link to={`/admin/product`}>
+            <Link to={`/admin/products`}>
                 Thêm mới
             </Link></button>
         <div className="overflow-x-auto rounded-lg border border-gray-200">

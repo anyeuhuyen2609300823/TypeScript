@@ -34,6 +34,16 @@ export interface ISpecification {
     }
 }
 
+export const createProductSchema = Yup.object({
+    name: Yup.string().required("Trường dữ liệu bắt buộc"),
+    price: Yup.number(),
+    original_price:Yup.number(),
+    description: Yup.string().required("trường dữ liệu bắt buộc"),
+    image: Yup.array().min(6)
+})
+
+export type createProduct = Yup.InferType<typeof createProductSchema>
+
 export const signupSchema = Yup.object({
     firstName: Yup.string().required("Trường dữ liệu bắt buộc"),
     lastName: Yup.string().required("Trường dữ liệu bắt buộc"),
