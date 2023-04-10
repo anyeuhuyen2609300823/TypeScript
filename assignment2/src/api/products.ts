@@ -23,5 +23,5 @@ export const DeleteById = (id: string) => {
 
 export const create = (body: createProduct) => {
     const uri = "/products/"
-    return instance.put(uri, body)
+    return instance.post(uri, body)
 }
