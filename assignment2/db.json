@@ -3,18 +3,11 @@
     {
       "email": "admin@fpt.edu.vn",
       "password": "$2a$10$1NmqEc9g2I9TALkSeh6CJuwPqTOLdQ/uPbDPzLFj8bzmbOGkjAlHe",
-      "firstName": "huyen",
+      "firstName": "admin",
       "lastName": "khanh",
       "confirmPassword": "123an123",
+      "role": 1,
       "id": 1
-    },
-    {
-      "email": "anddph23131@fpt.edu.vn",
-      "password": "$2a$10$tSIyB3hTVvfrePbRHcvoRuJ0qQnREV/y5rBwRy.UeDbP7Dz/G4sGy",
-      "firstName": "an",
-      "lastName": "daoan",
-      "confirmPassword": "123456an",
-      "id": 2
     },
     {
       "email": "daoan2609@gmail.com",
@@ -23,6 +16,14 @@
       "lastName": "daoan",
       "confirmPassword": ".!BgAHq6b3qJwU",
       "id": 3
+    },
+    {
+      "email": "nvkh3008@gmail.com",
+      "password": "$2a$10$.c8lH03aCjBM3xTds8m23.372QOKIab47Jkz2McM87Qc0gqCcEQzS",
+      "firstName": "an",
+      "lastName": "huyen",
+      "confirmPassword": "s$Q$KX.5J!3irq",
+      "id": 4
     }
   ],
   "products": [
@@ -2030,7 +2031,7 @@
     },
     {
       "id": 12,
-      "name": "Apple iPad 10.3",
+      "name": "Apple iPad 10.3 huyền xinh gái ",
       "price": 20490000,
       "original_price": 23990000,
       "description__small": " Mô tả ngắn: Trước khi mua bất kỳ chiếc điện thoại nào, người dùng cũng sẽ quan tâm đến thiết kế sản phẩm trước. Với phiên bản A73, Samsung đã tạo nên một chiếc smartphone với vẻ ngoài mang đến cảm giác sang trọng và tinh tế.",

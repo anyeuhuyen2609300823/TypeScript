@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from 'react-router-dom'
 
-import { getAll } from "../api/products"
+import { getAll, DeleteById } from "../api/products"
 import { IProduct } from "../models"
 
 const Dashboard = () => {
@@ -16,8 +16,24 @@ const Dashboard = () => {
         fetchProducts()
     }, [])
 
+    // xóa sản phẩm 
+    const handleDelete = async (productId: string) => {
+        const status = window.confirm("Bạn có chắc chắn muốn xóa sản phẩm này chứ ?")
+
+        if (status) {
+            await DeleteById(productId)
+            setProducts(products.filter(product => product.id !== productId))
+        }
+
+    }
+
+
     return <div className="mt-20">
         <h2>Product list</h2>
+        <button className="bg-green-600 text-white rounded-md p-2 ml-1">
+            <Link to={`/admin/product`}>
+                Thêm mới
+            </Link></button>
         <div className="overflow-x-auto rounded-lg border border-gray-200">
             <table className="min-w-full divide-y-2 divide-gray-200 text-sm">
                 <thead>
@@ -67,7 +83,7 @@ const Dashboard = () => {
                                 <button className="bg-blue-600 text-white rounded-md p-2 mr-1"> <Link to={`/admin/product/${product.id}`}>
                                     Sửa
                                 </Link></button>
-                                <button className="bg-red-600 text-white rounded-md p-2 ml-1">Xoá</button>
+                                <button className="bg-red-600 text-white rounded-md p-2 ml-1" onClick={() => handleDelete(product.id)}>Xoá</button>
                             </td>
                         </tr>
                     ))}
